@@ -20,7 +20,7 @@ public:
 	using size_type = std::size_t;
 
 	T* allocate(const std::size_t & n) {
-		if (lst.empty()) {
+		if (buffer == nullptr) {
 			buffer = new T[BLOCK_SIZE];
 			for (std::size_t i = 0; i < BLOCK_SIZE; ++i) {
 				lst.push_back(&buffer[i]);

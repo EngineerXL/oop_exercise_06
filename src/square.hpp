@@ -6,7 +6,7 @@
 
 template<class T>
 struct square_t {
-	/* cords of left bottom corner, side */
+	/* Cords of left bottom corner, side */
 	std::pair<T, T> cord;
 	T side;
 
