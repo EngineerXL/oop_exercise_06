@@ -26,7 +26,6 @@ public:
 				lst.push_back(&buffer[i]);
 			}
 		}
-		printf("Allocatind %lu bytes in block with %lu free bytes\n", n, lst.size());
 		if (lst.size() < n) {
 			throw(std::bad_alloc());
 		} else {
